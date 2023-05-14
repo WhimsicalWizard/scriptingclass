@@ -30,7 +30,7 @@ if (!$result) die("Database fetch failed: " . mysqli_error($con));
             echo "<td>" . $row['age'];
             "</td>";
             echo "<td>" . $row['email'];
-            "</td>";
+            "</td></tr>";
             echo "<td><a href=\"edit.php?id=$row[id]\">Edit</a>
             <a href=\"delete.php?id=$row[id]\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
         }
