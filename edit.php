@@ -10,7 +10,9 @@ if (isset($_POST['updatef'])) {
     $result = mysqli_query($con, "update  user set name='$name', age='$age', email='$email' where id='$id';");
     if (!$result) die("Update failed: " . mysqli_error($mysqli));
     echo "<font color='green'>Data added successfully.";
-    echo "<br/><a href='index.php'>View Result</a>";
+    echo "<script>window.location.href = 'index.php';</script>";
+    echo "<script>alert('Data successfully edited');</script>";
+
 }
 
 ?>
@@ -33,6 +35,8 @@ else "<font color='red'>The user is missing.";
 
 <head>
     <title>Edit Data</title>
+        <link rel="stylesheet" type="text/css" href="enterdata.css">
+
 </head>
 
 <body>
