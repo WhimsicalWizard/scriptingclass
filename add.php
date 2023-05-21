@@ -19,7 +19,7 @@
                 die("Insertation failed: " . mysqli_error($con));
             }
             echo "Data added successfully.";
-            echo "<br/><a href='index.php'>View Result</a>";
+            echo "<script>window.location.href = 'index.php';</script>";
             
         }
 
