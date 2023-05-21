@@ -9,7 +9,7 @@ if (!$result) die("Database fetch failed: " . mysqli_error($con));
 
 <head>
     <title>HomePage</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
 
 </head>
 
