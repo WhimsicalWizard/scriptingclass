@@ -1,0 +1,62 @@
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  /* Style for the links */
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style for the form */
+  form {
+    margin-top: 20px;
+  }
+  
+  /* Style for the table */
+  table {
+    width: 20%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  th, td {
+    padding: 8px;
+  }
+  
+  /* Style for the form input fields */
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  /* Style for the form submit button */
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
