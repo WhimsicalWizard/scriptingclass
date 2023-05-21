@@ -1,6 +1,6 @@
 <?php
 include('config.php');
-$result = mysqli_query($con, "select * from user order by id desc");
+$result = mysqli_query($con, "select * from user order by name asc");
 
 if (!$result) die("Database fetch failed: " . mysqli_error($con));
 ?>
@@ -12,10 +12,12 @@ if (!$result) die("Database fetch failed: " . mysqli_error($con));
 </head>
 
 <body>
-    <a href="add/add.html">Add New Data</a><br /><br />
+    <a href="add.html">Add New Data</a><br /><br />
     <!-- creating table -->
     <table width='80%' border="0">
         <tr bgcolor='#aaf0fa'>
+            <td>S.N</td>
+
             <td>Name</td>
             <td>Age</td>
             <td>Email</td>
@@ -23,8 +25,12 @@ if (!$result) die("Database fetch failed: " . mysqli_error($con));
         </tr>
         <?php
         // displays the data from the database
+        $sn = 1;
         while ($row = mysqli_fetch_array($result)) {
             echo "<tr>";
+            echo "<td>" . $sn;
+            $sn++;
+            "</td>";
             echo "<td>" . $row['name'];
             "</td>";
             echo "<td>" . $row['age'];
