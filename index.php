@@ -17,7 +17,7 @@ if (!$result) die("Database fetch failed: " . mysqli_error($con));
     <a href="add.html">Add New Data</a><br /><br />
     <!-- creating table -->
     <table width='80%' border="0">
-        <tr bgcolor='#aaf0fa'>
+        <tr>
             <td>S.N</td>
 
             <td>Name</td>
